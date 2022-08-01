@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SelectOrCreatePizzaFragment">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.pizzashop.model.OrderViewModel" />
+
+        <variable
+            name="pizzaSelectionFragment"
+            type="com.example.pizzashop.SelectOrCreatePizzaFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/createPizza"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/createPizza"
+            android:scaleType="fitXY"
+            android:src="@drawable/create"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
+
+
+        <ImageButton
+            android:id="@+id/margherita"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/margherita_1"
+            android:scaleType="fitXY"
+            android:src="@drawable/margherita"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/submarine"
+            app:layout_constraintTop_toBottomOf="@+id/createPizza" />
+
+        <ImageButton
+            android:id="@+id/cheese_pizza"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/cheese_pizza"
+            android:scaleType="fitXY"
+            android:src="@drawable/margherita"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/submarine" />
+
+        <ImageButton
+            android:id="@+id/pepperoni"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/pepperoni"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/pepperoni"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cheese_pizza"
+            app:layout_constraintTop_toBottomOf="@+id/margherita" />
+
+        <ImageButton
+            android:id="@+id/submarine"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/submarine"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sub"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createPizza"
+            tools:src="@drawable/sub" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
