@@ -18,5 +18,14 @@
         android:id="@+id/selectOrCreatePizzaFragment"
         android:name="com.example.pizzashop.SelectOrCreatePizzaFragment"
         android:label="@string/fragment_select_or_create_pizza"
-        tools:layout="@layout/fragment_select_or_create_pizza" />
+        tools:layout="@layout/fragment_select_or_create_pizza" >
+        <action
+            android:id="@+id/action_selectOrCreatePizzaFragment_to_createPizzaFragment"
+            app:destination="@id/createPizzaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createPizzaFragment"
+        android:name="com.example.pizzashop.CreatePizzaFragment"
+        android:label="@string/createPizza"
+        tools:layout="@layout/fragment_create_pizza" />
 </navigation>

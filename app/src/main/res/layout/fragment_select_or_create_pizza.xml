@@ -20,19 +20,29 @@
         android:layout_height="match_parent">
 
 
-        <ImageButton
+        <ImageView
             android:id="@+id/createPizza"
             android:layout_width="170dp"
             android:layout_height="170dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
             android:contentDescription="@string/createPizza"
             android:scaleType="fitXY"
             android:src="@drawable/create"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/createPizzaButton"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ImageContrastCheck" />
 
+        <Button
+            android:id="@+id/createPizzaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="76dp"
+            android:onClick="@{() ->  pizzaSelectionFragment.gotoNextScreen()}"
+            android:text="Create Pizza"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
             android:id="@+id/margherita"

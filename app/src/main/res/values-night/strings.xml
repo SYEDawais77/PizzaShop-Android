@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_your_own_pizza">Create Your Own Pizza</string>
+    <string name="give_your_pizza_name">Give Your Pizza Name</string>
+</resources>

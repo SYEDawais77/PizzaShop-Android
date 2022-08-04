@@ -6,64 +6,58 @@
 
     <data>
 
-
-
         <variable
             name="startFragment"
             type="com.example.pizzashop.StartFragment" />
     </data>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="@dimen/side_margin">
-
-        <ImageView
-            android:layout_width="400dp"
-            android:layout_height="400dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/margin_between_elements"
-            android:importantForAccessibility="no"
-            android:scaleType="center"
-            app:srcCompat="@drawable/pizzatime" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="@dimen/side_margin"
-        android:text="@string/welcome_text"
-        android:textSize="90px"
-        android:textAppearance="?attr/textAppearanceHeadline4"
-        android:textColor="@color/material_on_background_emphasis_medium" />
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="@dimen/side_margin"
-            android:text="@string/welcome_text_2"
-            android:textSize="60px"
-            android:textAppearance="?attr/textAppearanceHeadline4"
-            android:textColor="@color/material_on_background_emphasis_medium" />
+            android:orientation="vertical"
+            android:padding="@dimen/side_margin">
 
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:importantForAccessibility="no"
+                android:scaleType="center"
+                app:srcCompat="@drawable/pizzatime" />
 
-    <Button
-        android:id="@+id/tryNow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/margin_between_elements"
-        android:minWidth="@dimen/order_pizza_button_width"
-        android:text="@string/try_now" />
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/side_margin"
+                android:text="@string/welcome_text"
+                android:textAppearance="?attr/textAppearanceHeadline4"
+                android:textColor="@color/material_on_background_emphasis_medium"
+                android:textSize="90px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/side_margin"
+                android:text="@string/welcome_text_2"
+                android:textAppearance="?attr/textAppearanceHeadline4"
+                android:textColor="@color/material_on_background_emphasis_medium"
+                android:textSize="60px" />
+
+            <Button
+                android:id="@+id/tryNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:minWidth="@dimen/order_pizza_button_width"
+                android:text="@string/try_now" />
+        </LinearLayout>
     </ScrollView>
-
-
 </layout>

@@ -1,10 +1,10 @@
 package com.example.pizzashop
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.pizzashop.databinding.FragmentStartBinding
@@ -12,7 +12,8 @@ import com.example.pizzashop.model.OrderViewModel
 
 
 class StartFragment : Fragment() {
-    private val  sharedViewModel: OrderViewModel by activityViewModels()
+    private val sharedViewModel: OrderViewModel by activityViewModels()
+
 
     private var binding: FragmentStartBinding? = null
 
@@ -36,9 +37,7 @@ class StartFragment : Fragment() {
         }
     }
 
-
-
-    fun gotoNextScreen(){
+    private fun gotoNextScreen() {
         findNavController().navigate(R.id.action_startFragment_to_selectOrCreatePizzaFragment)
     }
 

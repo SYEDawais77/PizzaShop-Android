@@ -4,7 +4,7 @@
     <string name="welcome_text">Welcome To Pizza Shop</string>
     <string name="welcome_text_2">The Best Pizza in Town</string>
     <string name="try_now">Try Now</string>
-    <string name="fragment_select_or_create_pizza"> Select or Create Pizza </string>
+    <string name="fragment_select_or_create_pizza">Create or Select Pizza </string>
     <string name="margherita">Margherita</string>
     <string name="vegetarian">Vegetarian</string>
     <string name="margherita_1">Margherita</string>
@@ -12,4 +12,6 @@
     <string name="pepperoni">Pepperoni</string>
     <string name="submarine">Submarine Pizza</string>
     <string name="createPizza">Create Pizza</string>
+    <string name="create_your_own_pizza">Create Your Own Pizza</string>
+    <string name="give_your_pizza_name">Give Your Pizza Name</string>
 </resources>
