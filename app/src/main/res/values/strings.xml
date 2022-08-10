@@ -14,4 +14,5 @@
     <string name="createPizza">Create Pizza</string>
     <string name="create_your_own_pizza">Create Your Own Pizza</string>
     <string name="give_your_pizza_name">Give Your Pizza Name</string>
+    <string name="create_pizza">Create Pizza</string>
 </resources>
